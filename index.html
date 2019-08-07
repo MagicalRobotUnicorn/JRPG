@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+
+  </title>
+  <style>
+    #playerdisplay {
+      height: 500px;
+      width: 500px;
+      border-radius: 25px;
+      border: 3px solid red;
+      align-content: center;
+    }
+
+    #playerphotoframe {
+      height: 220px;
+      width: 200px;
+      border-radius: 25px;
+      border: 3px solid red;
+      align-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      align-content: center;
+    }
+
+    #playerphoto {
+      height: 180px;
+      width: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+      /* margin-left: 137.5px; */
+      margin-right: center;
+    }
+
+    #enemydisplay {
+      height: 500px;
+      width: 500px;
+      border-radius: 25px;
+      border: 3px solid black;
+      align-content: center;
+    }
+
+    #enemyphotoframe {
+      height: 220px;
+      width: 200px;
+      border-radius: 25px;
+      border: 3px solid black;
+      align-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      align-content: center;
+    }
+
+    #enemyphoto {
+      height: 180px;
+      width: auto;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      /* margin-left: 137.5px; */
+      margin-right: center;
+    }
+  </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+
+<body>
+  <div id="overworld"></div>
+  <div id="combat">
+    <div class="row">
+      <div class="col-lg-6">
+        <div id="playerdisplay">
+          <div id="playerphotoframe">
+            <img src="character1.png" id="playerphoto">
+          </div>
+          <h1 id="charactername">
+            Player Name
+          </h1>
+          <button type="button" class="btn btn-primary btn-lg btn-block" id="atk-button">Attack</button>
+          <br />
+          <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100"
+              aria-valuemin="0" aria-valuemax="100" id="playerHealthbar">Health Bar</div>
+          </div>
+          <br />
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="100"
+              aria-valuemin="0" aria-valuemax="100" id="playerEnergy Bar">Energy Bar</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div id="enemydisplay">
+          <div id="enemyphotoframe">
+            <img src="monster1.png" id="enemyphoto">
+          </div>
+          <h1 id="enemyname">
+            Enemy Name
+          </h1>
+          <br />
+          <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100"
+              aria-valuemin="0" aria-valuemax="100">Health Bar</div>
+          </div>
+          <div>
+            <h1>Health: <div id="enemyhealth"></div></h1>
+          </div>
+
+          <br />
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="game_project.js"></script>
+</html>
